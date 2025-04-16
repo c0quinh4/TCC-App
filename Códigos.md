@@ -1,26 +1,27 @@
-Códigos para eu não esquecer:
-
-**Após clonar o repositório:**
-    npm install *1ª PASSO OBRIGATÓRIO*
-    npx expo start *2º PASSO OBRIGATÓRIO
-    expo doctor --fix-dependencies *não é necessário*
-    npm install -g eas-cli *não é necessário*
-    npx expo prebuild *não é necessário*
-    eas build --platform android *somente caso o de baixo não funcione*
-    npx expo run:android
-
-**Conectar Celular**
-    adb devices
-    adb tcpip 5555
-    ip WI-FI Luiza: 192.168.0.27
-    ip WI-FI Casa: 192.168.7.11
-    adb connect <IP_do_celular>:5555
+**COMANDOS IMPORTANTES PRA EU NÃO ESQUECER:**
 
 **GIT HUB**
-    ASSIM QUE ABRIR O CÓDIGO
+    *ASSIM QUE ABRIR O CÓDIGO:*
         git pull
-
-    COMMIT:
+    *COMMIT:*
         git add .
         git commit -m "mensagem"
         git push -u origin main ou só git push
+
+**Depois de usar *git pull / clonar o repositório:**
+    npm install ***1ª PASSO OBRIGATÓRIO*** (Cria pasta node_modules)
+    npx expo start ***2º PASSO OBRIGATÓRIO*** (Cria pasta .expo)
+    npx expo run:android ***3º PASSO OBRIGATÓRIO*** (Roda para testar se a build do app funciona. Obs: Talvez não seja necessário de primeira, só quando for rodar o app)
+    npm install -g eas-cli caso não esteja rodando o expo start
+    expo doctor --fix-dependencies caso alguma dependência quebre
+    eas build --platform android somente caso o run android não funcione
+    npx expo prebuild caso a build plataform do android não rode
+
+**Conectar Celular**
+    *conecta o cabo*
+    adb devices
+    adb tcpip 5555
+    *desconecta o cabo*
+    ip WI-FI Luiza: 192.168.0.27
+    ip WI-FI Casa: 192.168.7.11
+    adb connect <IP_do_celular>:5555
