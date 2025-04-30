@@ -12,10 +12,11 @@
     npm install ***1ª PASSO OBRIGATÓRIO*** (Cria pasta node_modules)
     npx expo start ***2º PASSO OBRIGATÓRIO*** (Cria pasta .expo)
     npx expo run:android ***3º PASSO OBRIGATÓRIO*** (Roda para testar se a build do app funciona. Obs: Talvez não seja necessário de primeira, só quando for rodar o app)
-    npm install -g eas-cli caso não esteja rodando o expo start
-    expo doctor --fix-dependencies caso alguma dependência quebre
-    eas build --platform android somente caso o run android não funcione
-    npx expo prebuild caso a build plataform do android não rode
+    npm install -g eas-cli _caso não esteja rodando o expo start_
+    expo doctor --fix-dependencies _caso alguma dependência quebre_
+    eas build --platform _android somente caso o run android não funcione_
+    npx expo prebuild _caso a build plataform do android não rode_
+    npx expo start
 
 **Conectar Celular**
     *conecta o cabo*
